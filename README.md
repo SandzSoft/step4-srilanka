@@ -1,3 +1,10 @@
-# Discover Sri Lanka – My Step 4 Webpage
-This repository contains my CodePen webpage project about Sri Lanka. 
-It includes images, text, and a popup map feature. 
+# Discover Sri Lanka
+This repository contains my **Step 4 webpage** project.
+
+## Features
+- Images
+- Popup map
+- Centered main image
+
+## Link
+[Visit Wikipedia](https://en.wikipedia.org/wiki/Sri_Lanka)

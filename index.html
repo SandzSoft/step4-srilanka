@@ -1,96 +1,54 @@
-html::before {
-  content: 'CodePen ♥ The Web';
-  position: fixed;
-  inset: 0;
-  z-index: -1;
-  margin: auto;
-  width: fit-content;
-  height: fit-content;
-  font-family: monospace;
-  opacity: 0.6;
-  background: rebeccapurple;
-  color: white;
-  padding: 4px 8px;
-  border-radius: 4px;
-}
-
-.center-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 500px;
-}
-
-a {
-  color: darkblue;
-  text-decoration: none;
-  font-weight: bold; 
-}
-
-a:hover {
-  color: darkgreen;
-  text-decoration: underline;
-}
-
-.container {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-}
-
-.box {
-  display: flex;
-  width: 50%;
-  flex-direction: column;
-}
-
-.box img {
-  width: 100%;
-  height: 200px;
-  margin-top: auto;
-}
-
-.popup {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.6);
-
-  display: none;
-  justify-content: center;
-  align-items: center;
-}
-
-.popup-content {
-  margin-left: auto;
-  margin-right: auto;
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  width: 60%;
-  text-align: center;
-}
-
-.popup-content img {
-  width: 90%;
-  height: 400px;
-  margin-top: auto;
-}
-
-.popup-content a {
-  display: inline-block;
-  font-weight: bold;
-  padding: 8px 16px;
-  background-color: darkred;
-  color: white;
-  text-decoration: none;
-  border-radius: 5px;
-  margin-top: 10px;
-  cursor: pointer;     
-}
-
-.popup:target {
-  display: flex;
-}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sri Lanka</title>
+  </head>
+  <body>
+    <script src="./script.js"></script>
+    <h1>Discover Sri Lanka – The Pearl of the Indian Ocean</h1>
+    <img src="https://images.unsplash.com/photo-1582549497719-6d4b53ee817f?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" class="center-image" alt="Sigiriya Rock Fortress in Sri Lanka">
+    <p>Sri Lanka is a tropical paradise known for its stunning beaches, lush green tea plantations, ancient temples, and vibrant culture. Explore historic cities like Kandy and Sigiriya, relax on golden shores at Unawatuna and Mirissa, and spot elephants and leopards in its famous national parks. With warm hospitality, delicious cuisine, and breathtaking landscapes, Sri Lanka promises an unforgettable journey for every traveler.</p>
+    <p>
+      Learn more about 
+      <a href="https://en.wikipedia.org/wiki/Sri_Lanka" target="_blank">Sri Lanka</a>
+    </p>
+    <div class="container">
+      <div class="box">
+        <h3>Sri Lanka’s weather</h3>
+        <p>
+    Sri Lanka’s climate is tropical, which means it experiences distinct wet and dry seasons. However, temperatures stay hot and humid throughout the year and, even during the rainy season, there is often still a good amount of sunshine each day, especially in the country’s coastal areas.</p>
+        <a href="#popup" class="button">Map of Sri Lanka</a>
+        <img src="https://images.unsplash.com/photo-1708348600204-6a95991a5d49?q=80&w=1933&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Mountains in Sri Lanka">
+      </div>
+      <div class="box">
+        <h3>When is the best time to visit Sri Lanka</h3>
+        <p>
+          Like all tropical countries, Sri Lanka’s weather can be unpredictable, so it’s always wise to expect the unexpected and prepare for all eventualities. However, generally speaking, the best weather in Sri Lanka is experienced in the period between December and mid-April. These months are considered peak season, and as such, visitor numbers spike, which means prices can go up as well.
+        </p>
+        <img src="https://images.unsplash.com/photo-1714276538863-b589a353474e?q=80&w=1074&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Oceans in Sri Lanka">
+      </div>
+    </div>
+    <h2>Top Things to Watch in Sri Lanka</h2>
+    <ul>
+      <li>Sigiriya Rock Fortress</li>
+      <li>Temple of the Tooth, Kandy</li>
+      <li>Dambulla Cave Temple</li>
+      <li>Ella’s Nine Arches Bridge</li>
+      <li>Yala National Park</li>
+      <li>Nuwara Eliya & Tea Plantations</li>
+      <li>Galle Fort</li>
+      <li>Mirissa & Unawatuna Beaches</li>
+      <li>Adam’s Peak (Sri Pada)</li>
+      <li>Polonnaruwa Ancient City</li>
+    </ul>
+    <div id="popup" class="popup">
+  <div class="popup-content">
+    <img src="https://plus.unsplash.com/premium_photo-1712366459284-2b564cc93a16?q=80&w=798&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Map of Sri Lanka">
+    <a href="#!">Close</a>
+  </div>
+</div>
+  </body>
+</html>

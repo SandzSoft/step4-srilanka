@@ -3,7 +3,7 @@ html::before {
   position: fixed;
   inset: 0;
   z-index: -1;
-  margin: auto;
+  margin: 50px;
   width: fit-content;
   height: fit-content;
   font-family: monospace;
